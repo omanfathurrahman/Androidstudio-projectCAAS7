@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogoutActivity"
+    >
+    <!-- Header -->
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/profil_kelompok"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="33dp"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="20dp" />
+            <TextView
+                android:id="@+id/tvNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Gasta"
+                android:textColor="#321F0E"
+                android:textSize="15sp"
+                android:layout_marginStart="33dp"
+                tools:ignore="HardcodedText" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:thumbTextPadding="16dp"
+                android:thumbTint="@color/black"
+                android:trackTint="@color/yellow"
+                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/gSignOutBtn"
+                android:layout_marginTop="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="313dp"
+                android:height="36.8dp"
+                android:background="@drawable/btn3"
+                android:layout_marginLeft="50dp"
+                android:text="Logout"
+                android:textColor="#000"
+                />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menuFooterProfile"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <!-- Konten yang dapat di-scroll -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profpeng"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/profpeng2"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/profpeng3"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/profpeng4"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center_horizontal"/>
+<!--            <FrameLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:ignore="UselessParent">-->
+<!--                -->
+
+<!--            </FrameLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/menuFooterProfile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/footerBg"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="Description of the image"
+                android:src="@drawable/shape"
+                tools:ignore="HardcodedText,ImageContrastCheck,VisualLintBounds" />
+
+            <ImageButton
+                android:id="@+id/imbMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/discovery1"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText,RtlHardcoded,DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imbNews"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/vector1"
+                tools:ignore="HardcodedText,RtlHardcoded,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imbProfil"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/profile"
+                tools:ignore="HardcodedText,RtlHardcoded,ImageContrastCheck" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

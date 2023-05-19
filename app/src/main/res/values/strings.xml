@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CAAS7</string>
+    <string name="loginavatar">loginAvatar</string>
+    <string name="login">Login</string>
+    <string name="selamatdatang">Selamat Datang</string>
+    <string name="login_with_google">Login With Google</string>
+    <string name="logogoogle">logoGoogle</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="con">Continue</string>
+    <string name="welcome">Welcome</string>
+    <string name="user">User!</string>
+    <string name="profil_kelompok">Profil kelompok</string>
+</resources>

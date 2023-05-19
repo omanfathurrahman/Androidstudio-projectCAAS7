@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="391dp"
+        android:layout_height="87dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Welcome Back"
+                android:textColor="#99321F0E"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                tools:ignore="HardcodedText,TextSizeCheck"/>
+
+            <TextView
+                android:id="@+id/tvNameHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Gasta"
+                android:textColor="#321F0E"
+                android:textSize="15sp"
+                android:layout_marginStart="30dp"
+                tools:ignore="HardcodedText" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:thumbTextPadding="16dp"
+                android:thumbTint="@color/black"
+                android:trackTint="@color/yellow"
+                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuFooter"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <!-- Konten yang dapat di-scroll -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="392dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/boxx1"
+                    tools:ignore="ContentDescription"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="97dp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="90dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Status"
+                    android:textColor="#3C4E79"
+                    android:textSize="28sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="@font/inter"
+                    android:text="ID-1101210153"
+                    android:textColor="#3C4E79"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <ImageView
+                    android:layout_width="391dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="220dp"
+                    android:src="@drawable/boxx2"
+                    tools:ignore="ContentDescription"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="293dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="310dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Status"
+                    android:textColor="#3C4E79"
+                    android:textSize="28sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="350dp"
+                    android:fontFamily="@font/inter"
+                    android:text="ID-1101210153"
+                    android:textColor="#3C4E79"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <ImageView
+                    android:layout_width="394dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="450dp"
+                    android:src="@drawable/boxx3"
+                    tools:ignore="ContentDescription"
+                    tools:layout_editor_absoluteX="6dp"
+                    tools:layout_editor_absoluteY="494dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="540dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Status"
+                    android:textColor="#3C4E79"
+                    android:textSize="28sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="580dp"
+                    android:fontFamily="@font/inter"
+                    android:text="ID-1101210153"
+                    android:textColor="#3C4E79"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/menuFooter"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/footerBg"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="Description of the image"
+                android:src="@drawable/shape"
+                tools:ignore="HardcodedText,ImageContrastCheck,VisualLintBounds" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/discovery1"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText,RtlHardcoded,DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imbNews"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/vector1"
+                tools:ignore="HardcodedText,RtlHardcoded,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imbProfil"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="278dp"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/profile"
+                tools:ignore="HardcodedText,RtlHardcoded,ImageContrastCheck" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

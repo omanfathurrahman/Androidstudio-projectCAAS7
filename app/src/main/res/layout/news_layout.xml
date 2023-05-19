@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="12dp"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="12dp"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="7dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/globedark"></ImageView>
+        <TextView
+            android:id="@+id/titlenews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:includeFontPadding="false"
+            android:text="Judul berita"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+
+        <TextView
+            android:id="@+id/subtitlenews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="lorem ipsum"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="187dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
